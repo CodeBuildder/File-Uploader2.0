@@ -1,0 +1,24 @@
+ADE Exp List for kk:
+
+Exp1: To construct a Half wave and Full wave rectifier using diode and to draw its performance        characteristics.
+
+Exp2: Design and implement a Schmitt trigger using Op-Amp using a simulation package and demonstrate its       working.
+
+Exp3: To design and implement a rectangular waveform generator (Op-Amp relaxation oscillator) using a       simulation package and demonstrate the working of it.
+
+Exp4: Design and implementation of transistor as a switch
+
+Exp5: Design CMOS Inverter and measure its propagation delay  using Multisim Live Online Circuit       Simulator.
+
+Exp6: a- 6.a.	Design and implementation of Binary to gray code converters using logic gates.
+      b- 6.b. Design and implementation of Gray to Binary code converters using logic gates.
+
+Exp7: To Design a magnitude comparator using Multisim software and to verify its truth table.
+
+Exp8: Design and implementation of Synchronous sequential circuits using Simulation Package.
+
+Exp9: Implementation of SISO, SIPO, PISO and PIPO shift registers using Flip Flop.
+
+Exp10: To design and simulation 3-bit synchronous up and down counter using multisim software. 
+
+Exp11: To demonstrate the applications of combinational logic circuits using AND & NOT gates in a seat           belt warning system.
