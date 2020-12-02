@@ -3,36 +3,43 @@ const multer = require('multer')
 const File = require('../models/file')
 const router = new express.Router()
 
-router.post('/files', async (req, res) => {
-    const fileName = new File(req.body)
 
-    try{
+// router.post('/u', async (req, res) => {
+//     const user = new User(req.body)
 
-        await fileName.save()
-        res.status(201).send({ files })
+//     try{
 
-    }catch(e){
-        res.status(400).send(e)
-    }
-})
+//         await user.save()
+//         sendWelcomeEmail(user.email, user.name)
+//         const token = await user.generateAuthToken()
+//         res.status(201).send({ user, token})
+
+//     }catch(e){
+//         res.status(400).send(e)
+//     }
+// })
 
 const upload = multer({
-
-   limits: {
-       fileSize: 10000000
-   } 
+    dest:'Public'
 })
 
-router.post('/files/data', upload.single('data'), (req, res) => {
+router.post('/files', upload.single('file'), (req, res) => {
 
-    req.fileName.data = req.file.buffer
-    req.fileName.save()
-    res.send()
-    },
-    (error, req, res, next) => {
-    console.log(error)
-    res.status(400).send({error:error.message})
+    const data = req.file
+    console.log(data)
+    
+    // try{
+
+    //     data.save()
+    //     res.status(201).send({ data })
+    //     console.log(req.file.originalname)
+    // }catch(e){
+    //     res.status(400).send(e)
+    //     console.log(e)
+    // } 
 })
+
+// router.get('')
 
 // router.delete('/users/me/avatar', auth, async (req, res) => {
 //     req.user.avatar = undefined
