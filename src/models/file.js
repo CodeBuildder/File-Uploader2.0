@@ -3,12 +3,12 @@ const mongoose = require('mongoose')
 const fileSchema = new mongoose.Schema({
 
     name:{
-        type: types.String,
+        type: String,
         required:true,
         trim:true
     },
     data:{
-        type:Buffer
+        type:String
     }
  
 }, {
