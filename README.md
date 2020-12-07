@@ -1,5 +1,7 @@
 This File-Uploader is created using NodeJS and MulterJS.
 
+Use 'npm run start' and access 'localhost:3000' to kick start your server.
+
 Documentation for the application to be run on POSTMAN after copying the URL : 
  
  <h1> Documentation: </h1>
